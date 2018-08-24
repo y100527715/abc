@@ -1,0 +1,32 @@
+<!--pages/cinema/cinema.wxml-->
+<view class='tr' >
+<text>成都</text>
+<text>热映</text>   
+<text>待映</text>
+</view>
+
+<view class='td' wx:for="{{list}}" wx:key="item._id">
+<!-- 左边内容 -->
+<view>
+<!-- <image  src='{{IP + item[index].movie_cover_img}}'></image> -->
+<image  src='{{IP+imgs[index]}}'></image>
+</view>
+<!-- 中间部分 -->
+<view class='middle'>
+<view>{{item.movie_cName}}</view>
+<view class='tr_two'>{{item.movie_type}}</view>
+<view class='tr_two'>主演:{{item.movie_actors}}</view>
+</view>
+<!-- 右边部分 -->
+<view class='right'>
+<view class='yellow'>{{item.movie_scoring}}分</view>
+<block>
+<button wx:if="{{item.isActive}}" class='btn_two'>购票</button>
+<button wx:else class='btn_to'>预售</button>
+</block>
+<!-- <view wx:if="{{item.isActive}}"><button class='btn_two'>购票</button></view>
+<view wx:else><button class='btn_to'>预售</button></view> -->
+
+</view>
+
+</view>

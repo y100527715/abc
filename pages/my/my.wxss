@@ -1,0 +1,31 @@
+/**index.wxss**/
+.swiper-tab{
+	width: 100%;
+	border-bottom: 2rpx solid #DCDCDC;
+	text-align: center;
+	line-height: 80rpx;
+  display: flex;}
+.swiper-tab-list{  
+  font-size: 30rpx;
+  font-weight: 600;
+   display: inline-block;
+	width: 15%;
+	color: #777777;
+  margin-right: 100rpx;
+}
+.on{ 
+  color: 	#FF0000;
+	border-bottom: 5rpx solid  	#FF0000;}
+ 
+.swiper-box{ display: block; height: 100%; width: 100%; overflow: hidden; }
+.swiper-box view{
+	/* text-align: center; */
+}
+.chengdu{
+ margin-right: 150rpx;
+}
+.sea_ch{
+ margin-top: 20rpx; 
+margin-left: 30rpx;
+ border-left: 1px solid #F5F5F5;
+}
